@@ -15,16 +15,17 @@
     <body>
         <div class="container">
             <div class="mb-2" style="background-color: black; color: white; text-align: center; padding: 10px 0 10px 0">
-                <h1>Séries</h1>
+                <h1>Adicionar série</h1>
             </div>
 
-            <a href="/series/criar" class="btn btn-dark mb-2">Adicionar</a>
+            <form action="POST">
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" class="form-control" name="nome">
 
-            <ul class="list-group">
-                <?php foreach ($series as $serie) : ?>
-                    <li class="list-group-item"><?= $serie; ?></li>
-                <?php endforeach; ?>
-            </ul>
+                    <button class="btn btn-primary mt-2">Adicionar</button>
+                </div>
+            </form>
         </div>
     </body>
 </html>
