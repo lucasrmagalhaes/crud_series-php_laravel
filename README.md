@@ -74,3 +74,7 @@ php artisan make:migration criar_tabela_series
 ```php
 php artisan migrate
 ```
+
+**Quais as principais vantagens de um ORM?** <br>
+Migração entre SGBDs de forma transparente. Utilizando um ORM, caso a gente precise migrar de SQLite para PostgreSQL, por exemplo, essa migração seria transparente para o nosso código. <br>
+Nos poupar de escrever código SQL.
