@@ -13,14 +13,6 @@ class SeriesController extends Controller
             'GOT'
         ];
 
-        $html = "<ul>";
-
-        foreach ($series as $serie) {
-            $html .= "<li>$serie</li>";
-        }
-
-        $html .= "</ul>";
-
-        return $html;
+        return view('series.index', compact('series'));
     }
 }
