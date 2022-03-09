@@ -12,7 +12,7 @@ composer create-project --prefer-dist laravel/laravel controle-series 5.8.*
 php artisan serve
 ```
 
-[MVC](https://github.com/lucasrmagalhaes/crud_series-php_laravel/blob/main/controle-series/public/mvc.png)
+[MVC](https://github.com/lucasrmagalhaes/crud_series-php_laravel/blob/main/public/mvc.png)
 
 Model se refere à camada que modela o nosso negócio, ou seja, o domínio e as regras de negócio. 
 
@@ -78,3 +78,15 @@ php artisan migrate
 **Quais as principais vantagens de um ORM?** <br>
 Migração entre SGBDs de forma transparente. Utilizando um ORM, caso a gente precise migrar de SQLite para PostgreSQL, por exemplo, essa migração seria transparente para o nosso código. <br>
 Nos poupar de escrever código SQL.
+
+**Salvando os dado(s) do Formulário:**
+```php
+$serie = Serie::create([
+    'nome' => $nome
+]);
+```
+
+**Outra forma de salvar, pega todos os campos do formulário:**
+```php
+$serie = Serie::create($request->all());
+```

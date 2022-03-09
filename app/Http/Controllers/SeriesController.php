@@ -8,11 +8,7 @@ use App\Serie;
 class SeriesController extends Controller
 {
     public function index(Request $request) {
-        $series = [
-            'Dexter',
-            'Lost',
-            'GOT'
-        ];
+        $series = Serie::all();
 
         return view('series.index', compact('series'));
     }
@@ -24,10 +20,8 @@ class SeriesController extends Controller
 
     public function store(Request $request)
     {
-        $nome = $request->nome;
+        $serie = Serie::create($request->all());
 
-        $serie = new Serie();
-        $serie->nome = $nome;
-        var_dump($serie->save());
+        echo "Série com id {$serie->id} criada: {$serie->nome}";
     }
 }
