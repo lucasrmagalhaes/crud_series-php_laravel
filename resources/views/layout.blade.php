@@ -14,7 +14,7 @@
 
     <body>
         <div class="container">
-            <div class="mb-2" style="background-color: black; color: white; text-align: center; padding: 10px 0 10px 0">
+            <div class="mb-2" style="background-color: black; color: white; text-align: center; padding: 30px 0 30px 0">
                 <h1>@yield('cabecalho')</h1>
             </div>
 
