@@ -90,3 +90,9 @@ $serie = Serie::create([
 ```php
 $serie = Serie::create($request->all());
 ```
+
+**Ordenar as séries buscadas no banco pelo seu nome (em ordem crescente):**
+```php
+$series = Serie::query()->orderBy('nome')->get();
+```
+
