@@ -11,3 +11,11 @@ Subindo o servidor de desenvolvimento:
 ```
 php artisan serve
 ```
+
+Model se refere à camada que modela o nosso negócio, ou seja, o domínio e as regras de negócio. 
+
+View é como isso será representado visualmente, e a ligação entre ambos é controlada pela camada Controller.
+
+[ADR (Action, Domain, Responder)](http://pmjones.io/adr/)
+
+O padrão ADR ainda não é tão adotado quanto o MVC, mas a leitura vale à pena e nos faz questionar o que mais podemos melhorar em nossas escolhas de arquitetura.
