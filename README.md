@@ -59,3 +59,18 @@ public function index(Request $request) {
 **Outra biblioteca:** <br>
 [ZURB Foundation](https://get.foundation/index.html) <br>
 [GitHub](https://github.com/foundation/foundation-sites)
+
+**Listar todos os comandos:**
+```php
+php artisan list
+```
+
+**Criando uma nova migration:**
+```php
+php artisan make:migration criar_tabela_series
+```
+
+**Executar todas as migrates:**
+```php
+php artisan migrate
+```
