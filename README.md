@@ -36,3 +36,17 @@ echo $request->query('parametro');
 /** series?parametro=valor&pametro2=valor2 */
 var_dump($request->query());
 ```
+
+**compact() ->** chave e valor com o mesmo nome, pega o nome e encontra uma váriavel com o mesmo nome e retorna um array.
+
+```php
+public function index(Request $request) {
+    $series = [
+        'Dexter',
+        'Lost',
+        'GOT'
+    ];
+
+    return view('series.index', compact('series'));
+}
+```
