@@ -11,7 +11,9 @@
             <label for="nome">Nome</label>
             <input type="text" class="form-control" name="nome">
 
-            <button class="btn btn-primary mt-2">Adicionar</button>
+            <button class="btn btn-sm text-white bg-success mt-2">
+                Adicionar
+            </button>
         </div>
     </form>
 @endsection
