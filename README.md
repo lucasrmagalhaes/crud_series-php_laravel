@@ -98,9 +98,14 @@ $series = Serie::query()->orderBy('nome')->get();
 
 **Flash Message:** É uma mensagem na sessão HTTP, que durará apenas uma requisição, ou seja, será excluída da sessão na requisição seguinte.
 
-**addslashes()** -> Retorna uma string com barras adicionadas antes de caracteres que precisam ser escapados. <br>
-Estes caracteres são:
-- aspas simples (')
-- aspas duplas (")
-- barra invertida (\)
-- NUL (o byte NUL)
+**addslashes() ->** Retorna uma string com barras adicionadas antes de caracteres que precisam ser escapados. <br>
+Estes caracteres são: <br>
+aspas simples (') <br>
+aspas duplas (") <br>
+barra invertida (\) <br>
+NUL (o byte NUL)
+
+[Font Awesome](https://fontawesome.com/)
+```
+<script src="https://kit.fontawesome.com/0d70bf7cb0.js" crossorigin="anonymous"></script>
+```
