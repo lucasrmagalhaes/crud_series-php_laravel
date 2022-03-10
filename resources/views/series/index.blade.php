@@ -15,7 +15,21 @@
 
     <ul class="list-group">
         @foreach ($series as $serie)
-            <li class="list-group-item">{{ $serie->nome }}</li>
+            <li class="list-group-item" style="display: flex; justify-content: space-between;">
+                <div style="align-self: center;">
+                    {{ $serie->nome }}
+                </div>
+
+                <form
+                    method="POST"
+                    action="/series/{{ $serie->id }}"
+                    onsubmit="return confirm('Tem certeza que deseja remover {{ addslashes($serie->nome) }} ?')"
+                >
+                    @csrf
+                    @method('DELETE')
+                    <button class="btn btn-danger">Excluir</button>
+                </form>
+            </li>
         @endforeach
     </ul>
 @endsection
