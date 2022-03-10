@@ -96,3 +96,4 @@ $serie = Serie::create($request->all());
 $series = Serie::query()->orderBy('nome')->get();
 ```
 
+**Flash Message:** É uma mensagem na sessão HTTP, que durará apenas uma requisição, ou seja, será excluída da sessão na requisição seguinte.
