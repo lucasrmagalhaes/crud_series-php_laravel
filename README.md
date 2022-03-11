@@ -106,3 +106,10 @@ barra invertida (\) <br>
 NUL (o byte NUL)
 
 [Font Awesome](https://fontawesome.com/)
+
+**Validate:**
+```php
+php artisan make:request SeriesFormRequest
+```
+
+[Laravel - Validation](https://laravel.com/docs/9.x/validation)
