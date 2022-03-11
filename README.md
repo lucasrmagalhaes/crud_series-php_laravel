@@ -106,6 +106,3 @@ barra invertida (\) <br>
 NUL (o byte NUL)
 
 [Font Awesome](https://fontawesome.com/)
-```
-<script src="https://kit.fontawesome.com/0d70bf7cb0.js" crossorigin="anonymous"></script>
-```
