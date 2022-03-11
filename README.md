@@ -115,3 +115,8 @@ php artisan make:request SeriesFormRequest
 [Laravel - Validation](https://laravel.com/docs/9.x/validation)
 
 **Quais as vantagens de se utilizar Form Request?** Termos um local específico para definição destas regras, e definirmos mensagens personalizadas de validação.
+
+<hr>
+
+**Laravel parte 2:** trabalhando com Autenticação, Relacionamentos e Testes.
+
