@@ -1,5 +1,8 @@
 **Laravel parte 1:** produtividade no desenvolvimento web.
 
+**Que facilidades um framework full-stack como Laravel pode nos trazer?**
+- Auxílio com SQL (usando ORM), logs, tratamento de erros, etc.
+
 **Preparando o ambiente:** Instalação do PHP, composer, habilitar o pdo_sqlite e criar o projeto com Laravel.
 
 **Iniciando o projeto:**
@@ -115,8 +118,3 @@ php artisan make:request SeriesFormRequest
 [Laravel - Validation](https://laravel.com/docs/9.x/validation)
 
 **Quais as vantagens de se utilizar Form Request?** Termos um local específico para definição destas regras, e definirmos mensagens personalizadas de validação.
-
-<hr>
-
-**Laravel parte 2:** trabalhando com Autenticação, Relacionamentos e Testes.
-
