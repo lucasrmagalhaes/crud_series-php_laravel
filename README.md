@@ -60,3 +60,11 @@ php artisan make:component Titulo
 
 **O que precisamos fazer para termos um componente do blade?**
 - Criar um arquivo .blade.php no diretório resources/views/components.
+
+**Mais funcionalidades**
+```
+@{{ nome }}
+
+const series = {{ json_encode($series) }};
+const series = {{ Js::from($series) }};
+```
