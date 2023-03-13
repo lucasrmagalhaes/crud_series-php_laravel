@@ -5,5 +5,5 @@
 
 **Instalando o Laravel**
 ```
-composer create-project laravel/laravel controle-series
+composer create-project laravel/laravel controle-series ^9
 ```
