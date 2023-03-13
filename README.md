@@ -49,3 +49,6 @@ $request->input();
 response('', 302, ['Location' => 'https://google.com']);
 redirect('https://google.com');
 ```
+
+**O que a função response faz?**
+- Ela retorna um objeto do tipo ```Response``` com o corpo, status e cabeçalhos.
