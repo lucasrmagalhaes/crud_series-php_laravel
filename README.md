@@ -7,3 +7,17 @@
 ```
 composer create-project laravel/laravel controle-series ^9
 ```
+
+**Definindo a primeira rota**
+```
+php artisan
+```
+
+```
+php artisan serve
+```
+
+```
+php artisan serve --host=0.0.0.0 --port=8000
+http://localhost:8000
+```
