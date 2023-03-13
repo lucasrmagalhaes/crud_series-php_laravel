@@ -29,3 +29,12 @@ Route::{verbo http}('{sua rota}', {Código a ser executado});
 
 - Nós podemos ter rotas com Route::get, Route::post, Route::put, Route::delete, etc. 
 - Todos os verbos HTTP são válidos aqui.
+
+**Convenções de nome**
+```
+php artisan make:controller SeriesController
+```
+
+```
+php artisan make:controller PhotoController --resource
+```

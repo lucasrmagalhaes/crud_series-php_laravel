@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
-class SeriesController {
-    public function listarSeries() {
+use Illuminate\Http\Request;
+
+class SeriesController extends Controller
+{
+    public function index() {
         $series = [
             'Punisher',
             'Lost',
