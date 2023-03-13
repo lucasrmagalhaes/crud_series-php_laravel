@@ -19,7 +19,7 @@ php artisan serve
 
 ```php
 php artisan serve --host=0.0.0.0 --port=8000
-http://localhost:8000
+http://localhost:8000/series
 ```
 
 **Qual a sintaxe para criar uma nova rota no Laravel?**
@@ -67,4 +67,9 @@ php artisan make:component Titulo
 
 const series = {{ json_encode($series) }};
 const series = {{ Js::from($series) }};
+```
+
+**Entendendo o conceito - Laravel Mix**
+```
+npm install
 ```
