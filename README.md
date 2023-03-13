@@ -21,3 +21,11 @@ php artisan serve
 php artisan serve --host=0.0.0.0 --port=8000
 http://localhost:8000
 ```
+
+**Qual a sintaxe para criar uma nova rota no Laravel?**
+```
+Route::{verbo http}('{sua rota}', {Código a ser executado});
+```
+
+- Nós podemos ter rotas com Route::get, Route::post, Route::put, Route::delete, etc. 
+- Todos os verbos HTTP são válidos aqui.
