@@ -57,3 +57,6 @@ redirect('https://google.com');
 ```php
 php artisan make:component Titulo
 ```
+
+**O que precisamos fazer para termos um componente do blade?**
+- Criar um arquivo .blade.php no diretório resources/views/components.
