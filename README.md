@@ -9,21 +9,21 @@ composer create-project laravel/laravel controle-series ^9
 ```
 
 **Definindo a primeira rota**
-```
+```php
 php artisan
 ```
 
-```
+```php
 php artisan serve
 ```
 
-```
+```php
 php artisan serve --host=0.0.0.0 --port=8000
 http://localhost:8000
 ```
 
 **Qual a sintaxe para criar uma nova rota no Laravel?**
-```
+```php
 Route::{verbo http}('{sua rota}', {Código a ser executado});
 ```
 
@@ -31,10 +31,21 @@ Route::{verbo http}('{sua rota}', {Código a ser executado});
 - Todos os verbos HTTP são válidos aqui.
 
 **Convenções de nome**
-```
+```php
 php artisan make:controller SeriesController
 ```
 
-```
+```php
 php artisan make:controller PhotoController --resource
+```
+
+**Lidando com Request e Response**
+```php
+$request->get('id');
+$request->url();
+$request->method();
+$request->input();
+
+response('', 302, ['Location' => 'https://google.com']);
+redirect('https://google.com');
 ```
