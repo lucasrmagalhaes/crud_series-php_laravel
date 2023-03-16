@@ -93,3 +93,7 @@ npm run dev
 
 **Qual o propósito da função asset?**
 - Nos retornar o caminho de um asset (arquivo estático) que pode inclusive estar em outro domínio.
+
+**Por que não devemos ter informações sensíveis (como credenciais) em nosso código?**
+- Pois isso pode expor nossa segurança.
+- Porque podemos ter credenciais diferentes em ambientes diferentes.
