@@ -107,3 +107,11 @@ php artisan migrate
 **Além de simplesmente executar um CREATE TABLE, quais outras vantagens obtemos ao utilizar migrations?**
 - Sincronização dos bancos locais da equipe.
 - Versionamento do banco.
+
+**DB Facade**
+```php
+use Illuminate\Support\Facades\DB;
+
+DB::select('SELECT nome FROM series');
+DB::insert('INSERT INTO series (nome) VALUES (?)', [$nomeSerie]);
+```

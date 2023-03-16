@@ -1,5 +1,7 @@
 <x-layout title="Nova Série">
-    <form action="" method="post">
+    <form action="/series/salvar" method="post">
+        @csrf
+
         <div class="mb-3">
             <label
                 for="nome"
