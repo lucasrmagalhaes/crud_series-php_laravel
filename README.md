@@ -1,4 +1,6 @@
-### Laravel: crie aplicações web em PHP
+## Laravel: crie aplicações web em PHP
+
+### Laravel: criando uma aplicação com MVC
 
 **Que facilidades um framework full-stack como Laravel pode nos trazer?**
 - Auxílio com SQL (usando ORM), logs, tratamento de erros, etc.
@@ -128,3 +130,12 @@ php artisan make:model Serie
 ```
 
 [Building Queries](https://laravel.com/docs/9.x/eloquent#building-queries)
+
+### Laravel: validando formulários, usando sessões e definindo relacionamentos
+
+**Criando séries**
+```php
+Serie::create($request->all());
+Serie::create($request->only(['nome', 'genero']));
+Serie::create($request->except(['_token']));
+```
