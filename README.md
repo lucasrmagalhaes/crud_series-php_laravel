@@ -97,3 +97,9 @@ npm run dev
 **Por que não devemos ter informações sensíveis (como credenciais) em nosso código?**
 - Pois isso pode expor nossa segurança.
 - Porque podemos ter credenciais diferentes em ambientes diferentes.
+
+**Migrations**
+```php
+php artisan make:migration create_series_table
+php artisan migrate
+```
