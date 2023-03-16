@@ -73,3 +73,8 @@ const series = {{ Js::from($series) }};
 ```
 npm install
 ```
+
+**Vite e Mix**
+```
+npm install laravel-mix --save-dev
+```
