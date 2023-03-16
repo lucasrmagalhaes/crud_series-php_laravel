@@ -81,3 +81,12 @@ npm install laravel-mix --save-dev
 
 **Laravel Mix**
 - Apesar de ser recomendado pela equipe do Laravel, é um pacote JavaScript.
+
+**Instalando o Bootstrap**
+```
+npm install bootstrap
+```
+
+```
+npm run dev
+```
