@@ -103,3 +103,7 @@ npm run dev
 php artisan make:migration create_series_table
 php artisan migrate
 ```
+
+**Além de simplesmente executar um CREATE TABLE, quais outras vantagens obtemos ao utilizar migrations?**
+- Sincronização dos bancos locais da equipe.
+- Versionamento do banco.
