@@ -90,3 +90,6 @@ npm install bootstrap
 ```
 npm run dev
 ```
+
+**Qual o propósito da função asset?**
+- Nos retornar o caminho de um asset (arquivo estático) que pode inclusive estar em outro domínio.
