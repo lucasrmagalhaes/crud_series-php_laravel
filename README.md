@@ -126,3 +126,5 @@ DB::insert('INSERT INTO series (nome) VALUES (?)', [$nomeSerie]);
 ```php
 php artisan make:model Serie
 ```
+
+[Building Queries](https://laravel.com/docs/9.x/eloquent#building-queries)
