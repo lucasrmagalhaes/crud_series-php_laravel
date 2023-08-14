@@ -1,141 +1,64 @@
-## Laravel: crie aplicações web em PHP
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
-### Laravel: criando uma aplicação com MVC
+<p align="center">
+<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
-**Que facilidades um framework full-stack como Laravel pode nos trazer?**
-- Auxílio com SQL (usando ORM), logs, tratamento de erros, etc.
+## About Laravel
 
-**Instalando o Laravel**
-```
-composer create-project laravel/laravel controle-series ^9
-```
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-**Definindo a primeira rota**
-```php
-php artisan
-```
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-```php
-php artisan serve
-```
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-```php
-php artisan serve --host=0.0.0.0 --port=8000
-http://localhost:8000/series
-```
+## Learning Laravel
 
-**Qual a sintaxe para criar uma nova rota no Laravel?**
-```php
-Route::{verbo http}('{sua rota}', {Código a ser executado});
-```
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-- Nós podemos ter rotas com Route::get, Route::post, Route::put, Route::delete, etc. 
-- Todos os verbos HTTP são válidos aqui.
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-**Convenções de nome**
-```php
-php artisan make:controller SeriesController
-```
+## Laravel Sponsors
 
-```php
-php artisan make:controller PhotoController --resource
-```
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-**Lidando com Request e Response**
-```php
-$request->get('id');
-$request->url();
-$request->method();
-$request->input();
+### Premium Partners
 
-response('', 302, ['Location' => 'https://google.com']);
-redirect('https://google.com');
-```
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Cubet Techno Labs](https://cubettech.com)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[Many](https://www.many.co.uk)**
+- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
+- **[DevSquad](https://devsquad.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[OP.GG](https://op.gg)**
+- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
+- **[Lendio](https://lendio.com)**
 
-**O que a função response faz?**
-- Ela retorna um objeto do tipo ```Response``` com o corpo, status e cabeçalhos.
+## Contributing
 
-**Criando um Layout**
-```php
-php artisan make:component Titulo
-```
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-**O que precisamos fazer para termos um componente do blade?**
-- Criar um arquivo .blade.php no diretório resources/views/components.
+## Code of Conduct
 
-**Mais funcionalidades**
-```
-@{{ nome }}
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-const series = {{ json_encode($series) }};
-const series = {{ Js::from($series) }};
-```
+## Security Vulnerabilities
 
-**Entendendo o conceito - Laravel Mix**
-```
-npm install
-```
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-**Vite e Mix**
-```
-npm install laravel-mix --save-dev
-```
+## License
 
-**Laravel Mix**
-- Apesar de ser recomendado pela equipe do Laravel, é um pacote JavaScript.
-
-**Instalando o Bootstrap**
-```
-npm install bootstrap
-```
-
-```
-npm run dev
-```
-
-**Qual o propósito da função asset?**
-- Nos retornar o caminho de um asset (arquivo estático) que pode inclusive estar em outro domínio.
-
-**Por que não devemos ter informações sensíveis (como credenciais) em nosso código?**
-- Pois isso pode expor nossa segurança.
-- Porque podemos ter credenciais diferentes em ambientes diferentes.
-
-**Migrations**
-```php
-php artisan make:migration create_series_table
-php artisan migrate
-```
-
-**Além de simplesmente executar um CREATE TABLE, quais outras vantagens obtemos ao utilizar migrations?**
-- Sincronização dos bancos locais da equipe.
-- Versionamento do banco.
-
-**DB Facade**
-```php
-use Illuminate\Support\Facades\DB;
-
-DB::select('SELECT nome FROM series');
-DB::insert('INSERT INTO series (nome) VALUES (?)', [$nomeSerie]);
-```
-
-**CSRF (Cross-Site Request Forgery)**
-- O Laravel possui uma proteção contra um ataque chamado Cross-Site Request Forgery (CSRF).
-- Todo formulário que nós enviamos para o Laravel precisa ter uma informação extra: um token.
-- Esse token permite que o Laravel verifique que a requisição realmente foi enviada por um formulário do site.
-- Felizmente essa informação é simples de se adicionar, bastando usar a diretiva ```@csrf``` do blade.
-
-**Eloquent ORM**
-```php
-php artisan make:model Serie
-```
-
-[Building Queries](https://laravel.com/docs/9.x/eloquent#building-queries)
-
-### Laravel: validando formulários, usando sessões e definindo relacionamentos
-
-**Criando séries**
-```php
-Serie::create($request->all());
-Serie::create($request->only(['nome', 'genero']));
-Serie::create($request->except(['_token']));
-```
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
